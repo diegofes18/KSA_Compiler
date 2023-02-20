@@ -1,0 +1,13 @@
+func int params(int i){
+    return i +1;
+}
+
+main(){
+    int i <- 2;
+    int j <- 3;
+    int k <- 0;
+    string n;
+    n <- input();
+    //print(n);
+    j <- params();
+}
