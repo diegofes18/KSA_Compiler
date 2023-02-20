@@ -1,0 +1,19 @@
+//Aquesta funció inicialitza l'array amb n per referència
+proc inicialitza(int array a, int dim,int n){
+    for(int j <- 0; j < dim;j <- j + 1){
+        a[j] <- n;
+    }
+}
+func int mult(int a,int b){
+    return a*b;
+}
+func int suma(int a){
+    return (mult(2,3)+mult(3,4)) + a;
+}
+
+main(){
+    int a <- int[5];
+    //inicialitzam l'array amb 1
+    inicialitza(a,5,1);
+    int c<-suma(a[1]);
+}

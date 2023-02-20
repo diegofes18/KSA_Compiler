@@ -1,0 +1,30 @@
+func int prova(int a,int b){
+    return a+b;
+}
+
+func int suma(int array vector){
+    //int vector <- int[5];
+    for (int indice<-0;indice<5;indice<-indice+1){
+            vector[indice]<-4;
+    }
+    return prova(1,vector[3]);
+}
+
+main(){
+    int i <- 2;
+    int j <- 3;
+    int a <-1;
+    int vector <- int[7];
+    int k;
+    for (int indice<-0;indice<7;indice<-indice+1){
+        vector[indice]<-i;
+    }
+    k<-suma(vector);
+
+    //k ha de valer 5
+    if(k=5){
+        print("k val 5 APROVAM ");
+    }else{
+        print("Alerta Pere hi ha un problema amb el llenguatge");
+    }
+}
